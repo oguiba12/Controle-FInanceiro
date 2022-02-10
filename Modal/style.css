@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    
+    /* COLORS*/
+
+    --principal-color: #0931a0;
+    --secondary-color: #49AA26;
+    --background: #e5e2e2;
+    --shapes: #FFF;
+    --positive: #49AA26;
+    --negative:#E92929;
+    --logo: rgb(255, 255, 255);
+    --text-color: #000;
+    --text-color-alt: rgb(255, 255, 255);
+    --card-color: #1553ff;
+    --logo-color-siymbol: #d3c509;
+
+
+
+
+
+    --symbol-font: 100%;
+
+    --symbol-font-min: 1.5rem;
+
+}
+
+body {
+    background-color: rgba(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+
+    #container {
+        background-color: rgba(233, 233, 233, 0);
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    h1 {
+        font-weight: 400;
+        font-size: 1rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .inp-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(128, 0, 128, 0);
+        width: 95%;
+        height: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    
+    #inp-description {
+        display: flex;
+        align-items: center;
+        background-color:rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0rem 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #inp-description::placeholder {
+        color: black;
+        opacity: 0.5
+    }
+    
+    #inp-value {
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0rem 0.4rem;
+    }
+
+    #inp-value::placeholder {
+        color: black;
+        opacity: 0.5
+    }
+
+    .info-container {
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-container p {
+        color: black;
+        font-size: 0.7rem;
+        opacity: 0.8;
+        margin-left: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    .date-container {
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.4rem;
+    }
+
+    #inp-date {
+        background-color:rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.1rem 0.4rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        color: rgba(0, 0, 0);
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 30%;
+        margin-left: auto;
+       
+       
+        margin-right: auto;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+        width: 48%;
+        height: 70%;
+        text-decoration: none; 
+        margin-top: 0.2rem;   
+        border-radius: 0.2rem;
+     }
+
+     .button.cancel {
+         background-color: rgba(255, 0, 0, 0);
+         border: solid 0.1rem;
+         border-color: red;
+         color: red;
+         opacity: 0.9;
+     }
+
+     .button.cancel:hover {
+         opacity: 1;
+     }
+
+     .button.save {
+        background-color: var(--principal-color);
+         color: rgb(255, 255, 255);
+         opacity: 0.9;
+     }
+
+     .button.save:hover {
+         opacity: 1;
+     }
+
+}
+
+@media (min-width: 800px) {
+
+    #container {
+        background-color: rgba(233, 233, 233, 0);
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    h1 {
+        font-weight: 400;
+        font-size: 1rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .inp-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(128, 0, 128, 0);
+        width: 95%;
+        height: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    
+    #inp-description {
+        display: flex;
+        align-items: center;
+        background-color:rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0rem 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #inp-description::placeholder {
+        color: black;
+        opacity: 0.5
+    }
+    
+    #inp-value {
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0rem 0.4rem;
+    }
+
+    #inp-value::placeholder {
+        color: black;
+        opacity: 0.5
+    }
+
+    .info-container {
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-container p {
+        color: black;
+        font-size: 0.7rem;
+        opacity: 0.8;
+        margin-left: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    .date-container {
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.4rem;
+    }
+
+    #inp-date {
+        background-color:rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.1rem 0.4rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        color: rgba(0, 0, 0);
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 0, 0, 0);
+        width: 95%;
+        height: 30%;
+        margin-left: auto;
+       
+       
+        margin-right: auto;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+        width: 48%;
+        height: 70%;
+        text-decoration: none; 
+        margin-top: 0.2rem;   
+        border-radius: 0.2rem;
+     }
+
+     .button.cancel {
+         background-color: rgba(255, 0, 0, 0);
+         border: solid 0.1rem;
+         border-color: red;
+         color: red;
+         opacity: 0.9;
+     }
+
+     .button.cancel:hover {
+         opacity: 1;
+     }
+
+     .button.save {
+        background-color: var(--principal-color);
+         color: rgb(255, 255, 255);
+         opacity: 0.9;
+     }
+
+     .button.save:hover {
+         opacity: 1;
+     }
+
+}
+
